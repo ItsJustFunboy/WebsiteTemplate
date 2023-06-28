@@ -30,7 +30,7 @@ function processUserInput(){
     console.log("ProcessInputRequest Sent.")
     inputText = getTextFromUserInput()
 
-    //complex stuff goes here
+    //complex stuff goes here...
 
     finalResponse = "Placeholder"
     setLabelToFunctionResult(finalResponse)
