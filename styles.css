@@ -27,12 +27,17 @@ h1, h2, h3, h4, h5, h6, p {
 
 .send-button {
     background-color: lime;
+    width: 10%;
     margin: 10px;
+}
+
+.send-button:hover {
+    background-color: green;
 }
 
 .resultingTextLabel {
     background-color: gray;
-    color: fff;
+    color: #fff;
     border: solid;
     border-color: black;
 }
