@@ -1,0 +1,102 @@
+/*CSS code that is specific to the chatbotapi.html file*/
+
+:root {
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5: #2a2e35;
+    --gray6: #12181b;
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565;
+    --text: #fff;
+    --bg: var(--gray5);
+    --bg-nav: var(--gray6);
+}
+
+.input-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(90% - 2px);
+    height: 90%;
+    margin-bottom: 2%;
+}
+
+.centered {
+    margin: auto;
+    display: block;
+}
+
+.input-wrapper {
+    width: calc(90% - 2px); /*pretty much sep class width but slightly smaller*/
+    display: flex;
+    align-items: center;
+    margin: 2%;
+}
+
+.inputBox {
+    width: 70%;
+    height: 80%;
+    padding: 10px;
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+    background-color: var(--gray0);
+    color: var(--gray5);
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.inputBox:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 5px var(--blue);
+}
+
+.send-button {
+    background-color: lime;
+    width: 20%;
+    height: 80%;
+    font-size: 16px;
+}
+
+.send-button:hover {
+    background-color: green;
+}
+
+.sep {
+    border-radius: 25%;
+    border-style: solid;
+    width: 90%;
+    height: 2.5%;
+    margin: 1.5%;
+    background-color: var(--gray2);
+}
+
+.resultingTextLabel {
+    background-color: gray;
+    border: solid;
+    border-color: black;
+    padding: 10px;
+    max-width: 60%;
+    width: 95%;
+    font-size: 16px;
+}
+
+.container {
+    width: 50%;
+    max-width: 30%;
+    border: 5%;
+    border-style: solid;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}

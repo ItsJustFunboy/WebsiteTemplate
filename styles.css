@@ -1,69 +1,68 @@
 /* global css that affects all pages */
 
+:root {
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5: #2a2e35;
+    --gray6: #12181b;
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565;
+    --text: #fff;
+    --bg: var(--gray5);
+    --bg-nav: var(--gray6);
+}
+
 body {
-    background-color: #444;
-    color: #fff; /*text color*/
-    margin: auto;
-    width: auto; 
-    /*padding: 50px; OPTIONAL*/
-    font-family: 'Lexend Deca', sans-serif; 
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    background: var(--bg);
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    color: #fff;
     text-align: center;
 }
 
-.centered {
-    margin: auto;
-    display: block;
+.navbar {
+    height: 70px;
+    width: 100%;
+    background: var(--bg-nav);
+    color: var(--text);
 }
 
-.input-parent {
-        display: grid;
-        place-items: center;
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
-.send-button {
-    background-color: lime;
-    width: 10%;
-    margin: 10px;
-}
-
-.send-button:hover {
-    background-color: green;
-}
-
-.resultingTextLabel {
-    background-color: gray;
-    color: #fff;
-    border: solid;
-    border-color: black;
-}
-
-.topnav {
-    background-color: black;
-    overflow: hidden;
-}
-  
-.topnav a {
-    float: left;
-    color: white;
+header {
+    padding: 1em;
+    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+    background: var(--bg-nav);
+    margin-bottom: 1em;
+    padding-bottom: 3.5em;
     text-align: center;
-    padding: 14px 16px;
+}
+
+main {
+    min-height: 1000px;
+    padding: 2rem;
+}
+
+a {
+    color: currentColor;
     text-decoration: none;
-    font-size: 17px;
-}
-  
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
 }
 
-.topnav a.active {
-    background-color: white;
-    color: black;
-    border-color: black;
-    border-style: solid;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
