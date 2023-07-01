@@ -32,7 +32,7 @@ function processUserInput(){
 
     //complex stuff goes here...
 
-    finalResponse = "Placeholder"
+    finalResponse = inputText//"Placeholder"
     setLabelToFunctionResult(finalResponse)
     return null;
 };
